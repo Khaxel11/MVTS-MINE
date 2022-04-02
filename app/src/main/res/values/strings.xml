@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MVTS</string>
+
+    <string name="google_maps_key">AIzaSyDflY4MBHu63FkcUNHXzSjni_i3KebhFFw</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

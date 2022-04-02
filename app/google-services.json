@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "983634586267",
+    "project_id": "mvts-5855f",
+    "storage_bucket": "mvts-5855f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983634586267:android:ac032cad78f7d2d2c4743e",
+        "android_client_info": {
+          "package_name": "com.mvts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983634586267-t8pr33nermhmnlfkhpk140fs1a8kofcl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqQJWEwoXkO822Fbwtoe4lSzfHPaUfEqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983634586267-t8pr33nermhmnlfkhpk140fs1a8kofcl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
