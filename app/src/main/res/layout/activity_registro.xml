@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_registro">
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgCirculoPerfil"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:civ_border_color="@color/black"
+            android:layout_marginTop="50dp"
+            app:civ_border_width="5dp"
+            android:src="@drawable/user_miner"
+            app:civ_circle_background_color="@color/blue"
+            />
+        <LinearLayout
+            android:id="@+id/ln2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabCamara"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                app:backgroundTint="@color/blue"
+                android:src="@drawable/ic_camera"
+                app:fabCustomSize="40dp"
+                android:layout_margin="10dp"
+                app:borderWidth="10dp"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabGaleria"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                app:backgroundTint="@color/blue"
+                android:src="@drawable/ic_galeria"
+                app:fabCustomSize="40dp"
+                android:layout_margin="10dp"
+                app:borderWidth="10dp"
+                />
+        </LinearLayout>>
+
+
+        <TextView
+            android:id="@+id/lblNombreUser"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Nombre de Usuario" />
+        <EditText
+            android:id="@+id/txtNombreUser"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Nombre" />
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/lblApellido"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Apellido" />
+        <EditText
+            android:id="@+id/txtApellido"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/lblCorreo"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Correo" />
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/lblPW"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Contraseña" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text|textPassword"
+            android:textAlignment="center" />
+        <TextView
+            android:id="@+id/lblPW2"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Confirmar Contraseña" />
+        <EditText
+            android:id="@+id/txtConfirmPassword"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text|textPassword"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/lblVehiculo"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Vehiculo de Carga" />
+        <Spinner
+            android:id="@+id/spVehiculo"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+
+        <Button
+            android:id="@+id/btnNewCuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Crear Cuenta"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:shadowColor="@color/blue"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </LinearLayout>
+</ScrollView>

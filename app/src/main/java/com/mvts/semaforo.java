@@ -1,23 +1,23 @@
 package com.mvts;
 
-public class Mapainicio {
-
-
+public class semaforo {
     private double latitud;
     private double longitud;
     private String description;
-    public Mapainicio(){
-        
+    private int estado;
+    public semaforo(){
+
     }
-    public Mapainicio(double latitud, double longitud){
+    public semaforo(double latitud, double longitud){
         this.latitud = latitud;
         this.longitud = longitud;
         this.description = "TU UBICACIÓN";
     }
-    public Mapainicio(double latitud, double longitud, String description){
+    public semaforo(double latitud, double longitud, String description, int estado){
         this.latitud = latitud;
         this.longitud = longitud;
         this.description = description;
+        this.estado = estado;
     }
 
     public double getLatitud() {
@@ -41,4 +41,10 @@ public class Mapainicio {
     }
 
     public void setDescription(String Desc){this.description = Desc;}
+
+    public int getEstado() {
+        return estado;
+    }
+
+    public void setEstado(int estado){this.estado = estado;}
 }

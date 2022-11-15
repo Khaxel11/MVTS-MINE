@@ -12,52 +12,132 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/lblDestino"
-        android:layout_width="275dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Ver Semaforo:" />
-        <Button
-            android:id="@+id/btnPoint"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Ver Semaforo"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.683" />
-        <Button
-            android:id="@+id/btnMaps"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="IR MAPA"
-            android:textStyle="bold"
-            android:layout_marginTop="15dp"
 
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </LinearLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgCirculo"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="5dp"
+            android:src="@drawable/user_miner"
+            app:civ_circle_background_color="@color/blue"
+            />
+    <!-- <LinearLayout
+         android:id="@+id/ln2"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:gravity="center"
+         android:orientation="horizontal">
+         <com.google.android.material.floatingactionbutton.FloatingActionButton
+             android:id="@+id/fabCamara"
+             android:layout_width="40dp"
+             android:layout_height="50dp"
+             app:backgroundTint="@color/blue"
+             android:src="@drawable/ic_camera"
+             app:fabCustomSize="40dp"
+             android:layout_margin="10dp"
+             app:borderWidth="10dp"
+         />
+         <com.google.android.material.floatingactionbutton.FloatingActionButton
+             android:id="@+id/fabGaleria"
+             android:layout_width="40dp"
+             android:layout_height="50dp"
+             app:backgroundTint="@color/blue"
+             android:src="@drawable/ic_galeria"
+             app:fabCustomSize="40dp"
+             android:layout_margin="10dp"
+             app:borderWidth="10dp"
+             />
+     </LinearLayout>>-->
+
+<!--<TextView
+ android:id="@+id/lblID"
+ android:layout_width="275dp"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="5dp"
+ android:text="ID" />
+<EditText
+ android:id="@+id/txtID"
+ android:layout_width="280dp"
+ android:layout_height="wrap_content"
+ android:ems="10"
+ android:inputType="text"
+ android:textAlignment="center" />-->
+<TextView
+ android:id="@+id/lblNombre"
+ android:layout_width="275dp"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="50dp"
+ android:text="Nombre de Usuario" />
+<EditText
+ android:id="@+id/txtNombreU"
+ android:layout_width="280dp"
+ android:layout_height="wrap_content"
+ android:ems="10"
+ android:inputType="text"
+ android:textAlignment="center" />
+<TextView
+ android:id="@+id/lblPW"
+ android:layout_width="275dp"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="5dp"
+ android:text="Contraseña" />
+
+<EditText
+ android:id="@+id/txtPasswordU"
+ android:layout_width="280dp"
+ android:layout_height="wrap_content"
+ android:ems="10"
+ android:inputType="text|textPassword"
+ android:textAlignment="center" />
 
 
-    <!--<Button
-        android:id="@+id/btnPoint"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="PONER PUNTO"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.683" />-->
+<Button
+ android:id="@+id/btnMaps"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:gravity="center"
+ android:text="Iniciar Sesión"
+ android:textStyle="bold"
+ android:layout_marginTop="15dp"
+ android:shadowColor="@color/blue"
+
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toTopOf="parent" />
+<TextView
+android:id="@+id/lblaa"
+android:layout_width="275dp"
+android:layout_height="wrap_content"
+android:layout_marginTop="25dp"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:text="¿No tienes cuenta? ¡Registrate!" />
+<TextView
+ android:id="@+id/lblNewUser"
+ android:layout_width="275dp"
+ android:layout_height="wrap_content"
+ android:layout_marginTop="5dp"
+ android:textColor="@color/blue"
+ android:textAlignment="center"
+ android:gravity="center"
+ android:textStyle="bold"
+ android:text="Crear Cuenta" />
+</LinearLayout>
+
+
+<!--<Button
+android:id="@+id/btnPoint"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:text="PONER PUNTO"
+android:textStyle="bold"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.526"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintVertical_bias="0.683" />-->
 </androidx.constraintlayout.widget.ConstraintLayout>

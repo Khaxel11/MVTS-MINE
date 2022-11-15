@@ -1,23 +1,21 @@
 package com.mvts;
 
-public class Mapainicio {
-
-
+public class mina {
+    private String nombre;
     private double latitud;
     private double longitud;
-    private String description;
-    public Mapainicio(){
-        
+    public mina(){
+
     }
-    public Mapainicio(double latitud, double longitud){
+    public mina(double latitud, double longitud){
         this.latitud = latitud;
         this.longitud = longitud;
-        this.description = "TU UBICACIÓN";
+        this.nombre = "MINA";
     }
-    public Mapainicio(double latitud, double longitud, String description){
+    public mina(double latitud, double longitud, String nombre){
         this.latitud = latitud;
         this.longitud = longitud;
-        this.description = description;
+        this.nombre = nombre;
     }
 
     public double getLatitud() {
@@ -36,9 +34,9 @@ public class Mapainicio {
         this.longitud = longitud;
     }
 
-    public String getDescription() {
-        return description;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setDescription(String Desc){this.description = Desc;}
+    public void setNombre(String Desc){this.nombre = Desc;}
 }
